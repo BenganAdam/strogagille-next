@@ -1,8 +1,25 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Oswald, Work_Sans, Poppins } from "next/font/google";
 import "./globals.css";
+import { classNames } from "@/lib/utils/classNames";
+import Header from "@/components/Header/Header";
+import Footer from "@/components/Footer/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+export const oswald = Oswald({
+  subsets: ["latin"],
+  variable: "--font-oswald",
+});
+
+export const work_sans = Work_Sans({
+  subsets: ["latin"],
+  variable: "--font-work-sans",
+});
+
+export const poppins = Poppins({
+  subsets: ["latin"],
+  variable: "--font-poppins",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,8 +32,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="sv" className="scroll-smooth">
+      <body
+        className={classNames(
+          oswald.variable,
+          work_sans.variable,
+          poppins.variable
+        )}
+      >
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
