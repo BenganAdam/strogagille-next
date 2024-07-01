@@ -26,6 +26,44 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+@layer base {
+  body {
+    font-size: 100%;
+  }
+  body:has(.no-scroll) {
+    overflow: hidden;
+    height: 100vh;
+  }
+  h1, h2, h3, h4, p, a {
+    @apply font-poppins;
+  }
+  h1, h2, h3, h4, h5 {
+    line-height: 140%;
+    margin-bottom: 1rem;
+    @apply text-primary-yellow;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1.25rem;
+  }
+  h5 {
+    font-size: 1rem;
+  }
+  p, a {
+    line-height: 130%;
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
