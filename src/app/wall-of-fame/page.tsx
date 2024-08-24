@@ -1,8 +1,26 @@
 import ScoresTable from "@/components/ScoresTable/ScoresTable";
 import { contenders } from "@/lib/data/contesters";
 import { contests } from "@/lib/data/contests";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Wall of Fame - Strögagille Legacy",
+  description: "Här listas alla deltagares bragder i form av en topplista.",
+  openGraph: {
+    title: "Wall of Fame - Strögagille Legacy",
+    description: "Här listas alla deltagares bragder i form av en topplista.",
+    images: [
+      {
+        url: "/images/logo.png",
+        width: 300,
+        height: 300,
+        alt: "Strögagille logo",
+      },
+    ],
+  },
+};
 
 export default function WallOfFame() {
   const allContenders = contenders;

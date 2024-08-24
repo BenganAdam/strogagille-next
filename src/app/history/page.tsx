@@ -1,5 +1,23 @@
 import { contests } from "@/lib/data/contests";
 import Card from "@/components/Card/Card";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Bragder genom åren - Strögagille Legacy",
+  description: "Se genomförda bragder genom åren.",
+  openGraph: {
+    title: "Bragder genom åren - Strögagille Legacy",
+    description: "Se genomförda bragder genom åren.",
+    images: [
+      {
+        url: "/images/logo.png",
+        width: 300,
+        height: 300,
+        alt: "Strögagille logo",
+      },
+    ],
+  },
+};
 
 export default function History() {
   const allContests = contests;

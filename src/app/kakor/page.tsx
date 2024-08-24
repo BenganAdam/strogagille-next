@@ -1,4 +1,23 @@
+import RejectCookieButton from "@/components/Button/RejectCookieButton";
+import { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Kakor - Strögagille Legacy",
+  description: "Läs om hur vi använder och hanterar cookies.",
+  openGraph: {
+    title: "Kakor - Strögagille Legacy",
+    description: "Läs om hur vi använder och hanterar cookies.",
+    images: [
+      {
+        url: "/images/logo.png",
+        width: 300,
+        height: 300,
+        alt: "Strögagille logo",
+      },
+    ],
+  },
+};
 
 export default function Kakor() {
   return (
@@ -12,12 +31,14 @@ export default function Kakor() {
               analysera användaraktivitet.
             </p>
             <p>
-              Vi använder oss av Google Tag för att spåra aktivitet och nyttjar
-              denna informationen uteslutande för att analysera mängden
+              Vi använder oss av Google Analytics för att spåra aktivitet och
+              nyttjar denna informationen uteslutande för att analysera mängden
               användare som besöker sidan. Du som användare kan när som helst
-              välja att inte bli spårad genom att klicka på &quot;Avvisa alla
-              cookies&quot;.
+              avvisa cookies genom att klicka på knappen nedan.
             </p>
+            <div className="flex flex-col mt-8">
+              <RejectCookieButton />
+            </div>
           </div>
           <div className="max-w-[750px]">
             <div className="flex flex-col md:flex-row w-full justify-center items-center my-8 gap-4">
@@ -27,7 +48,7 @@ export default function Kakor() {
                   alt="Logo"
                   width={420}
                   height={420}
-                  loading="lazy"
+                  priority
                 />
               </div>
             </div>

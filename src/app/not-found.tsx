@@ -1,4 +1,23 @@
+import { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "404 - Strögagille Legacy",
+  description: "Sidan du letar efter finns inte.",
+  openGraph: {
+    title: "404 - Strögagille Legacy",
+    description: "Sidan du letar efter finns inte.",
+    images: [
+      {
+        url: "/images/logo.png",
+        width: 300,
+        height: 300,
+        alt: "Strögagille logo",
+      },
+    ],
+  },
+};
+
 export default function Custom404() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between overflow-hidden">

@@ -1,5 +1,23 @@
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Om oss - Strögagille Legacy",
+  description: "Läs om vilka vi är som står bakom hemsidan.",
+  openGraph: {
+    title: "Om oss - Strögagille Legacy",
+    description: "Läs om vilka vi är som står bakom hemsidan.",
+    images: [
+      {
+        url: "/images/logo.png",
+        width: 300,
+        height: 300,
+        alt: "Strögagille logo",
+      },
+    ],
+  },
+};
 
 export default function About() {
   return (
