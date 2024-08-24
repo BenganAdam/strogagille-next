@@ -1,3 +1,4 @@
+import { afterBorder } from "@/lib/models/afterBorder";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -58,20 +59,25 @@ export default function Home() {
           </div>
           <div className="max-w-[750px]">
             <div className="flex flex-col md:flex-row w-full justify-center items-center my-8 gap-4">
-              <div>
+              <div className="group">
                 <Link href={"/regler-information"}>
                   <Image
                     src="/images/beer_judge.png"
                     alt="Logo"
-                    width={420}
-                    height={420}
+                    width={430}
+                    height={430}
                     loading="lazy"
-                    className="cursor-pointer hover:scale-[103%] duration-200"
+                    className="cursor-pointer group-hover:scale-[103%] duration-200 mb-1"
                   />
+                  <span
+                    className={`${afterBorder.groupUnderLineBorder} text-sm`}
+                  >
+                    Regler &amp; information
+                  </span>
                 </Link>
               </div>
-              <div className="flex justify-between items-start md:items-center flex-row gap-4 md:gap-0 md:flex-col h-[200px] md:h-[420px]">
-                <div>
+              <div className="flex justify-between md:justify-center items-start md:items-center flex-row gap-2 md:gap-1 md:flex-col h-[230px] w-full md:w-auto md:h-[420px]">
+                <div className="group">
                   <Link href={"/wall-of-fame"}>
                     <Image
                       src="/images/wall_of_fame.png"
@@ -79,11 +85,16 @@ export default function Home() {
                       width={200}
                       height={200}
                       loading="lazy"
-                      className="cursor-pointer hover:scale-[103%] duration-200"
+                      className="cursor-pointer group-hover:scale-[103%] duration-200 min-w-[130px] min-h-[130px]"
                     />
+                    <span
+                      className={`${afterBorder.groupUnderLineBorder} text-sm`}
+                    >
+                      Wall of Fame
+                    </span>
                   </Link>
                 </div>
-                <div>
+                <div className="group">
                   <Link href={"/history"}>
                     <Image
                       src="/images/history.png"
@@ -91,8 +102,13 @@ export default function Home() {
                       width={200}
                       height={200}
                       loading="lazy"
-                      className="cursor-pointer hover:scale-[103%] duration-200"
+                      className="cursor-pointer group-hover:scale-[103%] duration-200 min-w-[130px] min-h-[130px]"
                     />
+                    <span
+                      className={`${afterBorder.groupUnderLineBorder} text-sm`}
+                    >
+                      Bragder genom åren
+                    </span>
                   </Link>
                 </div>
               </div>

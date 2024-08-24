@@ -1,4 +1,22 @@
+import { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Regler & information - Strögagille Legacy",
+  description: "Information och regler om hur du genomför ett Strögagille.",
+  openGraph: {
+    title: "Regler & information - Strögagille Legacy",
+    description: "Information och regler om hur du genomför ett Strögagille.",
+    images: [
+      {
+        url: "/images/logo.png",
+        width: 300,
+        height: 300,
+        alt: "Strögagille logo",
+      },
+    ],
+  },
+};
 
 export default function Regler() {
   return (
