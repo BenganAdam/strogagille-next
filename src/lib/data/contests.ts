@@ -1,4 +1,72 @@
+// const bars = [
+//   { id: 0, name: "Rullande start/Uplands" },
+//   { id: 1, name: "Orvars" },
+//   { id: 2, name: "Unico" },
+//   { id: 3, name: "Upplands" },
+//   { id: 4, name: "GH" },
+//   { id: 5, name: "Baras" },
+//   { id: 6, name: "Puben" },
+//   { id: 7, name: "Palermo" },
+//   { id: 8, name: "Värmlands" },
+//   { id: 9, name: "VG" },
+//   { id: 10, name: "Bishops" },
+//   { id: 11, name: "Lion" },
+//   { id: 12, name: "Dog Bar" },
+//   { id: 13, name: "Harrys" },
+//   { id: 14, name: "Kaliber" },
+// ];
+
 export const contests = [
+  {
+    id: 5,
+    name: "Strögagille HT24",
+    date: "2024-09-27",
+    thumbnail: "/images/omslag_HT_24.png",
+    startEndBar: {
+      id: 12,
+      name: "Dog Bar",
+    },
+    bars: [
+      {
+        id: 6,
+        name: "Puben",
+      },
+      {
+        id: 11,
+        name: "Lion",
+      },
+      {
+        id: 13,
+        name: "Harrys",
+      },
+      {
+        id: 14,
+        name: "Kaliber",
+      },
+    ],
+    winners: [
+      {
+        id: 2,
+        name: "Adam Bengtsson",
+      },
+      {
+        id: 17,
+        name: "Jeanette Jäderlund",
+      },
+      {
+        id: 5,
+        name: "Arvid Morelid",
+      },
+      {
+        id: 15,
+        name: "Joel Skoglund",
+      },
+      {
+        id: 16,
+        name: "Malin Grönqvist",
+      },
+    ],
+  },
   {
     id: 4,
     name: "Strögagille HT23",
