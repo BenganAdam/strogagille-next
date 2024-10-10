@@ -53,7 +53,7 @@ const Header = () => {
 
   useEffect(() => {
     if (isHome) {
-      !isScrolled ?? setAnimationKey((prevKey) => prevKey + 1);
+      !isScrolled && setAnimationKey((prevKey) => prevKey + 1);
     }
   }, [isScrolled, isHome]);
 
