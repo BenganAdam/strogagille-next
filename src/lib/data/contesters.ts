@@ -7,7 +7,7 @@ export const contenders = [
   {
     id: 2,
     name: "Adam Bengtsson",
-    wins: 2,
+    wins: 3,
   },
   {
     id: 3,
@@ -22,7 +22,7 @@ export const contenders = [
   {
     id: 5,
     name: "Arvid Morelid",
-    wins: 1,
+    wins: 2,
   },
   {
     id: 6,
@@ -67,6 +67,21 @@ export const contenders = [
   {
     id: 14,
     name: "Max Sahlholm",
+    wins: 1,
+  },
+  {
+    id: 15,
+    name: "Joel Skoglund",
+    wins: 1,
+  },
+  {
+    id: 16,
+    name: "Malin Grönqvist",
+    wins: 1,
+  },
+  {
+    id: 17,
+    name: "Jeanette Jäderlund",
     wins: 1,
   },
 ];
