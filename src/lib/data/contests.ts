@@ -14,9 +14,56 @@
 //   { id: 12, name: "Dog Bar" },
 //   { id: 13, name: "Harrys" },
 //   { id: 14, name: "Kaliber" },
+//   { id: 15, name: "Holmes" },
 // ];
 
 export const contests = [
+  {
+    id: 5,
+    name: "Strögagille HT25",
+    date: "2025-09-27",
+    thumbnail: "/images/omslag_HT_25.png",
+    startEndBar: {
+      id: 12,
+      name: "Dog Bar",
+    },
+    bars: [
+      {
+        id: 7,
+        name: "Palermo",
+      },
+      {
+        id: 15,
+        name: "Holmes",
+      },
+      {
+        id: 5,
+        name: "Baras",
+      },
+      {
+        id: 14,
+        name: "Kaliber",
+      },
+    ],
+    winners: [
+      {
+        id: 18,
+        name: "Karl Pettersson",
+      },
+      {
+        id: 16,
+        name: "Malin Grönqvist",
+      },
+      {
+        id: 19,
+        name: "Fredrik Olofsson",
+      },
+      {
+        id: 20,
+        name: "Rasmus Bergshem",
+      },
+    ],
+  },
   {
     id: 5,
     name: "Strögagille HT24",

@@ -1,6 +1,9 @@
-import { LiStyle } from "@/lib/models/Li";
 import Image from "next/image";
 import Link from "next/link";
+
+import { LiStyle } from "@/lib/models/Li";
+
+import { Copyright } from "./Copyright";
 
 const Footer = () => {
   const thisYear = new Date().getFullYear();
@@ -125,15 +128,7 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <div className="relative">
-          <div className="after:bg-primary-yellow opacity-40 after:absolute after:top-0 after:h-[1px] after:w-32 after:left-1/2 after:-translate-x-1/2 "></div>
-          <div className="flex justify-center items-center px-2 md:w-full w-72 mx-auto text-center ">
-            <p className="text-sm opacity-60">
-              © {thisYear}. Alla rättigheter reserverade enligt
-              upphovsrättslagen.
-            </p>
-          </div>
-        </div>
+        <Copyright />
       </div>
     </footer>
   );

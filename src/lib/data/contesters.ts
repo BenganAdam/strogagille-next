@@ -77,11 +77,26 @@ export const contenders = [
   {
     id: 16,
     name: "Malin Grönqvist",
-    wins: 1,
+    wins: 2,
   },
   {
     id: 17,
     name: "Jeanette Jäderlund",
+    wins: 1,
+  },
+  {
+    id: 18,
+    name: "Karl Pettersson",
+    wins: 1,
+  },
+  {
+    id: 19,
+    name: "Fredrik Olofsson",
+    wins: 1,
+  },
+  {
+    id: 20,
+    name: "Rasmus Bergshem",
     wins: 1,
   },
 ];
