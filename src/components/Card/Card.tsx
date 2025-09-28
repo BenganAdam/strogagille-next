@@ -19,7 +19,7 @@ export default function Card({ contest }: CardProps) {
             width={200}
             height={200}
             priority
-            className={`h-[inherit] w-auto ${
+            className={`h-[inherit] w-auto object-cover ${
               contest.thumbnail.length > 0 ? "min-w-[150px]" : ""
             } `}
           />
